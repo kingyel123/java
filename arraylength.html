@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p> -->
+    <!-- <p id="join"></p> -->
+    <!-- <p id ="sort"></p> -->
+    <!-- <p id="reverse"></p> -->
+    <script>
+
+//         const fruits=["Banana","Orange","Apple","Mango"];
+
+// let flen=fruits.length;
+// for(let i=0; i<flen; i++){
+//    document.write(fruits[i]);
+// }
+
+
+
+// const fruits=["Banana","Orange","Apple","Mango"];
+// document.getElementById("demo").innerHTML=fruits.toString();
+
+
+// const fruits=["Banana","Orange","Apple","Mango"];
+// document.getElementById("join").innerHTML=fruits.join("*");
+
+//concat--create new array
+// const arr1=["hello","hi"];
+// const arr2=[1,2,4];
+// const arr3=arr1.concat(arr2);
+// document.write("<br><br>"+arr3);
+
+
+//the slice()
+// const fruits=["Banana","Orange","Apple","Mango"];
+// const sli=fruits.slice(3);
+// document.write("<br><br>"+sli);
+
+
+//sort and reverse 
+// const fruits=["Banana","Orange","Apple","Mango"];
+// document.getElementById("sort").innerHTML=fruits.sort();
+// document.write("<br>")+fruits.sort();
+
+// const fruits=["Banana","Orange","Apple","Mango"];
+// document.getElementById("reverse").innerHTML=fruits.reverse();
+// document.write("<br>")+fruits.reverse();
+
+
+//switch date and time
+// var day;
+// switch(new Date().getDay()){
+// case 0:
+// day="Moday";
+// break;
+// case 1:
+// day="Tuesday";
+// break;
+// case 2:
+// day="Wednesday";
+// break;
+// case 3:
+// day="Thursday";
+// break;
+// case 4:
+// day="Friday";
+// break;
+// case 5:
+// day="Saturday";
+// break;
+// case 6:
+// day="Sunday";
+// break;
+// }
+// console.log("Today is"+day);
+// document.write("Today is" + day);
+
+    </script>
+    <button onclick="
+    let factor=prompt('enter a value');
+    let output=1;
+    for(let i=2;i<=factor;i++){
+    output*=i;
+    }
+    alert(output);
+    ">factorial</button>
+   
+    <button onclick="Calculator()">Calculator</button>
+
+    <script>
+    function Calculator() {
+        let choice = prompt('1.Add\n2.Subtract\n3.Mutiply\n4.Divide\nEnter a choice: ')
+
+        if (choice === '1' || choice === '2' || choice === '3' || choice === '4'){
+            let a = parseInt(prompt("Enter a: "));
+            let b = parseInt(prompt("Enter b: "));
+        }
+        
+        if (isNaN(a) || isNaN(b)) {
+            alert('Invalid choice');
+            
+        }
+       
+
+        if (choice === '1') {
+            let sum = a + b;
+            alert('sum' + sum);
+        } else if(choice==='2'){
+            let sub = a-b;
+            alert('sub'+sub);
+        }else if(choice==='3'){
+            let pro = a * b;
+            alert('pro'+pro);
+    }else if(choice==='4'){
+            let div = a/b;
+            alert('div'+div);
+}
+alert('sum' + sum);
+}
+    </script>
+</body>
+</html>
